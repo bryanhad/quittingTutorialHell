@@ -1,0 +1,79 @@
+:root{
+    --h1Size: 50px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stopwatch-container {
+    display: flex;
+    max-width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid rgb(190, 190, 190) 4px ;
+    color: rgb(152, 152, 152);
+    border-radius: 20px;
+}
+
+.number-container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.number {
+    font-size: var(--h1Size);
+    line-height: calc(var(--h1Size) - 10px);
+}
+
+
+
+
+.buttons-container{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.button {
+    flex: 1;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 15px;
+    border: none;
+    color: white;
+}
+
+.button.start{
+    background-color: rgb(70, 230, 58);
+}
+.button.stop{
+    background-color: rgb(230, 58, 58);
+}
+.button.reset{
+    background-color: rgb(163, 163, 163);
+}
